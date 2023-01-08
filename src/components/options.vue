@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import { mapStores } from 'pinia'
 import { useOptionsStore } from '@/modules/options/store'
 
@@ -13,7 +13,7 @@ export default {
     ...mapStores(useOptionsStore),
   },
   methods: {
-    changeLocale(value: string) {
+    changeLocale(value) {
       this.$i18n.locale = value
       this.optionsStore.changeLocale(value)
     },

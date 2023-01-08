@@ -11,7 +11,7 @@ export const useOptionsStore = defineStore(storeName, {
     }
   },
   actions: {
-    changeLocale(value: string) {
+    changeLocale(value) {
       this.locale = value
     },
   },

@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import Options from '@/components/options.vue'
 
 export default {
@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template lang="pug">
-div(:class="`route-${$route.name?.toString()}`")
+div(:class="`route-${$route.name}`")
   Options
   .wrap.xl-flexbox.xl-center.xl-1.container
     .col
