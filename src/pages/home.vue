@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template lang="pug">
-h1 vue-ts-starter
+h1 vue-starter
 </template>
 
 <style lang="scss" scoped>
