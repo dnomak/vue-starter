@@ -16,12 +16,12 @@ div(:class="`route-${$route.name}`")
     .col
       router-view
       a.dnomak.wrap.xl-auto.xl-middle.xl-center.xl-gutter-4(href="https://github.com/dnomak" target="_blank")
-        .col I
-        .col.love.icon
+        span.col I
+        span.col.love.icon
           font-awesome-icon(icon="fa-regular fa-heart")
           font-awesome-icon(icon="fa-solid fa-heart")
-        .col.love Love
-        .col JavaScript
+        span.col.love Love
+        span.col JavaScript
 </template>
 
 <style lang="scss" scoped>
