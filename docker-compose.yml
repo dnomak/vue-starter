@@ -1,0 +1,29 @@
+version: '3'
+services:
+  vue-starter:
+    image: vue-starter
+    container_name: vue-starter
+    build:
+      dockerfile: Dockerfile.dev
+    labels:
+      - 'traefik.enable=true'
+      - 'traefik.http.routers.vue-starter.rule=Host(`${DOMAIN:-vue-starter.localhost}`)'
+      - 'traefik.http.routers.vue-starter.entrypoints=web'
+    ports:
+      - 3003:3000
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+  load-balancer:
+    image: traefik:2.9
+    container_name: vue-starter-load-balancer
+    command:
+      - '--api.insecure=true'
+      - '--providers.docker=true'
+      - '--providers.docker.exposedbydefault=false'
+      - '--entrypoints.web.address=:80'
+    ports:
+      - '80:80'
+      - '8080:8080'
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock:ro'
