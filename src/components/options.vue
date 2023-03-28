@@ -26,7 +26,7 @@ export default {
   .options-title {{ $t('LANGUAGE OPTIONS:') }}
   .wrap.xl-2.xl-gutter-8
     .col(v-for="locale in $i18n.availableLocales")
-      a.options-item(@click="changeLocale(locale)" :class="{ 'active': optionsStore.locale == locale}")
+      a.options-item(href="#" @click="changeLocale(locale)" :class="{ 'active': optionsStore.locale == locale}")
         | {{ $t('Language', locale) }}
 </template>
 
