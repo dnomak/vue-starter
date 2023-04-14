@@ -32,6 +32,7 @@
     "@volar/vue-language-plugin-pug": "^1.2.0",
     "@vue/eslint-config-prettier": "^7.1.0",
     "eslint": "^8.38.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-vue": "^9.10.0",
     "npm-check-updates": "^16.10.8",
     "prettier": "^2.8.7",

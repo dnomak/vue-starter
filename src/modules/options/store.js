@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia'
+
 import { removeOldLocalStorageData } from '@/modules/utils'
 
 const storeName = 'options'
