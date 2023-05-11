@@ -6,9 +6,7 @@ import { useOptionsStore } from '@/modules/options/store'
 export default {
   name: 'ComponentOptions',
   created() {
-    this.setLocale(
-      !this.optionsStore.locale ? this.$i18n.locale : this.optionsStore.locale
-    )
+    this.setLocale(!this.optionsStore.locale ? this.$i18n.locale : this.optionsStore.locale)
   },
   computed: {
     ...mapStores(useOptionsStore),
@@ -27,11 +25,7 @@ export default {
   .options-title {{ $t('LANGUAGE OPTIONS:') }}
   .wrap.xl-2.xl-gutter-8
     .col(v-for="locale in $i18n.availableLocales")
-      a.options-item(
-        href="#"
-        @click="setLocale(locale)"
-        :class="{ active: optionsStore.locale == locale }"
-      )
+      a.options-item(href="#" @click="setLocale(locale)" :class="{ active: optionsStore.locale == locale }")
         | {{ $t('Language', locale) }}
 </template>
 
