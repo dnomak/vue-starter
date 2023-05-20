@@ -12,7 +12,7 @@ h1 {{ $t('Page not found.') }}
 h1 {
   font-size: 42rem;
   letter-spacing: -2rem;
-  line-height: 42rem;
+  line-height: 1;
   font-weight: 800;
   padding-bottom: 8rem;
   color: var(--red-300);

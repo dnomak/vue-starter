@@ -45,20 +45,22 @@ export default {
 .options-title {
   color: var(--gray-500);
   font-size: 12rem;
+  line-height: 1.5;
   font-weight: 700;
   padding-top: 16rem;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
   text-transform: uppercase;
 }
 .options-item {
   display: block;
   cursor: pointer;
-  padding: 4rem 8rem;
+  padding: 8rem;
   border: 2rem solid var(--gray-300);
   border-radius: 4rem;
   font-weight: 700;
   text-align: center;
   font-size: 14rem;
+  line-height: 1.5;
   margin-bottom: 8rem;
   &.active {
     background-color: var(--gray-300);

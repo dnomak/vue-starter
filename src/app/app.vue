@@ -35,14 +35,13 @@ div(:class="`route-${$route.name}`")
   display: inline-block;
   color: var(--gray-500);
   font-weight: 600;
-  line-height: 24rem;
+  line-height: 1.5;
   .col {
     font-size: 16rem;
   }
   .love {
     color: var(--red-300);
     &.icon {
-      line-height: 0;
       font-size: 24rem;
     }
   }
