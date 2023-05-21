@@ -14,7 +14,7 @@ app.use(pinia)
 import i18n from '@/app/modules/i18n'
 app.use(i18n)
 
-import FontAwesomeIcon from '@/app/modules/font-awesome'
+import FontAwesomeIcon from '@/app/modules/icons'
 app.component('font-awesome-icon', FontAwesomeIcon)
 
 app.mount('#app')
