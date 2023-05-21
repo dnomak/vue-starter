@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-import { removeOldLocalStorageData } from '@/modules/utils'
+import { removeOldLocalStorageData } from '@/stores/utils'
 
 const storeName = 'options'
 const storeVersion = '0.1.0'
